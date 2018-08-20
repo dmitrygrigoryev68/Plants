@@ -2,48 +2,26 @@
 
 public class  Flower extends Plant{
 
-    public Flower(int height, int age) {
-        super();
+    private int growPerSeason = 10;
+
+    public int getGrowPerSeason() {
+        return growPerSeason;
     }
 
-
-
-
-
-    public void doSpring(int height, int age) {
-        height = height + 5;
-        age = age + 0;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
+    public void doSpring() {
+        height = getGrowPerSeason();
     }
 
-    public void doSummer(int height, int age) {
-        height = height + 5;
-        age = age + 0;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
+    public void doSummer() {
     }
-    public void doAutumn(int height, int age) {
+
+    public void doAutumn() {
         height = 0;
-        age = age + 0;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
     }
 
-
-    public void doWinter(int height, int age) {
-        height = 0;
-        age = age + 0;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
+    public void doWinter() {
+        age = age + 1;
     }
-
-
-
 
 
 

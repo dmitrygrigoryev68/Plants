@@ -3,72 +3,30 @@
 
 public class Tree extends Plant {
 
-    int startHight;
+    private static int startHight = 100;
+    private int growPerSeason = 2;
 
     public Tree(int startHight) {
         super();
         this.startHight = startHight;
 
      }
-    public void doSpring(int height, int age, int startHight) {
-        height = startHight + 1;
-        age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
+    public int getGrowPerSeason() {
+        return growPerSeason;
     }
 
-    public void doSpring(int height, int age) {
-        height = height + 1;
-        age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
-    }
-    public void doSummer(int height, int age, int startHight) {
-        height = startHight + 1;
-        age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
+    public void doSpring() {
+        height = startHight + getGrowPerSeason();
+        startHight = height;
     }
 
-    public void doSummer(int height, int age) {
-        height = height + 1;
-        age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
-    }
-    public void doAutumn(int height, int age, int startHight) {
-        height = startHight + 1;
-        age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
+    public void doSummer() {
     }
 
-    public void doAutumn(int height, int age) {
-        height = height + 1;
-        age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
-    }
-    public void doWinter(int height, int age, int startHight) {
-        height = startHight + 1;
-        age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
+    public void doAutumn() {
     }
 
-    public void doWinter(int height, int age) {
-        height = height + 1;
+    public void doWinter() {
         age = age + 1;
-        System.out.println("height " + height);
-        System.out.println("age " + age);
-
     }
-
 }

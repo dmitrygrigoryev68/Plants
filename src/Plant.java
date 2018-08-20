@@ -1,10 +1,18 @@
 public abstract class Plant {
 
-    private int age;
-    private int height;
+    public int age;
+    public int height;
 
+    public abstract void doSpring();
+    public abstract void doSummer();
+    public abstract void doAutumn();
+    public abstract void doWinter();
 
-
-    public abstract void doSpring(int height,int age);
-
+    public int getAge() {
+        return age;
     }
+
+    public int getHeight() {
+        return height;
+    }
+}
